@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Георгий Новозенко](https://up.htmlacademy.ru/htmlcss/35/user/292701).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Остаповец](https://htmlacademy.ru/profile/seraphim).
 
 ---
 
