@@ -5,71 +5,132 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-
     <header class="main-header">
       <!-- Шапка сайта -->
-      <img src="#" alt="logo">
-      <nav>
-        <a href="index.html">Главная</a>
-        <a href="#">О Седоне</a>
-        <a href="#">Гостиницы</a>
+      <img class="logo" src="#" alt="Логотип города Седоны">
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="#">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Лайки</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="header-button" href="#">ХОЧУ СЮДА!</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
-    <main>
-      <!-- Основное содержимое страницы -->
-      <h1 class="visually-hidden">Сайт-визитка гостиниц в городе Седона</h1>
+    <main class="main-inner">
+      <section class="catalog-hotel">
+        <img src="#" alt="Фото Гранд-Каньона">
+        <header class="inner-header">
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
+        </header>
+        <div class="inner-filter">
+          <fieldset class="inner-filter-group">
+            <legend class="inner-filter-title">Инфраструктура:</legend>
+            <ul class="inner-filter-list">
+              <li class="inner-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="pool" checked>
+              Бассейн
+                </label>
+              </li>
+              <li class="inner-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="parking" checked>
+              Парковка
+                </label>
+              </li>
+              <li class="inner-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="wifi">
+              Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="inner-filter-group">
+            <legend class="inner-filter-title">Группы товаров</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="product-group" value="shaving-supplies">
 
-      <section>
-        <img src="#" alt="welcome-to-sedona">
-        <img src="#" alt="white-figure">
-        <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+              Бритвенные принадлежности
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
       </section>
 
-      <section>
-        <p>НАСТОЯЩИЙ ГОРОДОК</p>
-        <img src="#" alt="sedona-city">
-      </section> <!-- Настоящий городок -->
 
-      <section>
-        <h3 class="visually-hidden">Преимущества Седоны</h3>
-        <p>НЕБОЛЬШАЯ ПЛОЩАДЬ</p>
-        <p>КРАСИВАЯ ДОРОГА</p>
-        <p>МАЛО ТУРИСТОВ</p>
+
+      <section class="subscription subscription-catalog">
+        <h2>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <input type="text" placeholder="Ваш email" name="Ваш email" id="mail">
+        <a class="subscription-button" href="#">ПОДПИСАТЬСЯ</a>
       </section>
-
-      <section>
-        <img src="#" alt="bridge-of-devil">
-        <p>ТАМ ЕСТЬ МОСТ ДЬЯВОЛА</p>
-      </section>
-
-      <section>
-        <h3 class="visually-hidden">Услуги в Седоне</h3>
-        <p>ЖИЛЬЁ</p>
-        <p>ЕДА</p>
-        <p>СУВЕНИРЫ</p>
-      </section> <!-- Жильё-еда-сувениры -->
-
-      <section>
-        <h2>ЗАИНТЕРЕСОВАЛИСЬ?</h2>
-        <input type="button" name="ПОИСК ГОСТИНИЦЫ В СЕДОНЕ" id="search-of-hotel">
-      </section>
-
-      <section>
-        <img src="#" alt="grand-canyon">
-        <p>ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-        <input type="text" name="Ваш email" id="mail">
-        <input type="button" name="ПОДПИСАТЬСЯ" id="subscription">
-      </section>
-
     </main>
 
     <footer class="main-footer">
       <!-- Подвал сайта -->
+      <h2 class="visually-hidden">Контакты</h2>
+      <section class="footer-social">
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="footer-social-button" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">VKonakte</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-button" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="footer-social-button" href="https://www.youtube.com/user/htmlacademyru">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-telephone">
+        <p>+7 (812) 812-12-12</p>
+      </section>
+      <section class="logo-htmlacademy">
+        <a href="https://htmlacademy.ru">
+          <img src="#" alt="logo-htmlacademy">
+        </a>
+      </section>
     </footer>
-
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
-
   </body>
 </html>
