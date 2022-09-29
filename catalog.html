@@ -39,7 +39,8 @@
     </header>
 
     <main class="main-inner">
-      <section class="catalog-hotel">
+      <section class="catalog-hotels">
+        <h1 class="visually-hidden">Каталог</h1>
         <img src="#" alt="Фото Гранд-Каньона">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -52,7 +53,7 @@
             </li>
           </ul>
         </header>
-        <div class="inner-filter">
+        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="inner-filter-group">
             <legend class="inner-filter-title">Инфраструктура:</legend>
             <ul class="inner-filter-list">
@@ -77,18 +78,74 @@
             </ul>
           </fieldset>
           <fieldset class="inner-filter-group">
-            <legend class="inner-filter-title">Группы товаров</legend>
-            <ul class="catalog-filter-list">
+            <legend class="inner-filter-title">Тип жилья:</legend>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="radio" name="product-group" value="shaving-supplies">
-
-              Бритвенные принадлежности
+                  <input class="control-input" type="radio" name="housing-group" value="hotel" checked>
+              Гостиница
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="housing-group" value="motel">
+              Мотель
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="housing-group" value="apartments">
+              Апартаменты
                 </label>
               </li>
             </ul>
           </fieldset>
-        </div>
+          <fieldset class="inner-filter-group">
+            <legend class="inner-filter-title">Стоимость, &#8381;:</legend>
+              <li class="catalog-filter-item">
+                <input type="text" placeholder="0" name="min-price">
+                <input type="text" placeholder="9000" name="max-price">
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="inner-filter-group">
+            <legend class="visually-hidden">Кнопки</legend>
+            <button class="button" type="submit">Применить</button>
+            <button class="dropping-button" type="#">Сбросить</button>
+          </fieldset>
+        </form>
+        <p class="number-hotels">НАЙДЕНО ГОСТИНИЦ:38</p>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвые</option>
+          <option value="popular">Сначала популярные</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+        <a class="button-sorting current-button" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a class="button-sorting" href="#">
+          <span class="visually-hidden">Показать одну карточку</span>
+        </a>
+        <a class="button-sorting" href="#">
+          <span class="visually-hidden">Показать список</span>
+        </a>
+        <ul class="hotel-list">
+          <li class="hotel-card">
+            <img src="#" alt="Amara Resort &#38; Spa">
+            <b>Amara Resort &#38; Spa</b>
+
+            <a class="product-card-link" href="product.html">
+              <img class="product-card-image" src="" alt="">
+              <h3 class="product-card-title">Шампунь для мужчин Brews Daily</h3>
+            </a>
+            <b class="product-card-price">744 ₽</b>
+            <a class="product-card-button button" href="#">Купить</a>
+          </li>
+
+        </ul>
+
+
+
+
       </section>
 
 
