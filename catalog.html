@@ -21,14 +21,14 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <button class="button-search" type="button">
               <span class="visually-hidden">Поиск</span>
-            </a>
+            </button>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <button class="button-like" type="button">
               <span class="visually-hidden">Лайки</span>
-            </a>
+            </button>
           </li>
           <li class="navigation-item">
             <a class="header-button" href="#">ХОЧУ СЮДА!</a>
@@ -118,15 +118,16 @@
           <option value="popular">Сначала популярные</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <a class="button-sorting current-button" href="#">
+
+        <button class="button-sorting current-button" type="button">
           <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a class="button-sorting" href="#">
+        </button>
+        <button class="button-sorting" type="button">
           <span class="visually-hidden">Показать одну карточку</span>
-        </a>
-        <a class="button-sorting" href="#">
+        </button>
+        <button class="button-sorting" type="button">
           <span class="visually-hidden">Показать список</span>
-        </a>
+        </button>
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -219,8 +220,11 @@
       <section class="subscription subscription-catalog">
         <h2>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <input type="text" placeholder="Ваш email" name="Ваш email" id="mail">
-        <a class="button-subscription" href="#">ПОДПИСАТЬСЯ</a>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="newsletter-email">Email</label>
+          <input class="newsletter-field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">ПОДПИСАТЬСЯ</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
