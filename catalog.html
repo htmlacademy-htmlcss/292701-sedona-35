@@ -37,11 +37,9 @@
       </nav>
     </header>
     <main class="main-inner">
-      <section class="catalog-hotels">
-        <h1 class="visually-hidden">Каталог гостиниц Седоны</h1>
-        <img src="#" alt="Фото Гранд-Каньона">
+      <section class="catalog-filter">
         <header class="inner-header">
-          <h2 class="inner-header-title">Гостиницы Седоны</h2>
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="index.html">Главная</a>
@@ -51,6 +49,7 @@
             </li>
           </ul>
         </header>
+        <h2 class="visually-hidden">Список товаров с фильтром и сортировкой</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="inner-filter-group">
             <legend class="inner-filter-title">Инфраструктура:</legend>
@@ -111,24 +110,23 @@
             <button class="button-drop" type="button">Сбросить</button>
           </fieldset>
         </form>
-        <section class="catalog-sorting">
-          <h2 class="visually-hidden">Сортировка</h2>
-          <p class="number-hotels">НАЙДЕНО ГОСТИНИЦ:38</p>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <a class="button-sorting current-button" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="button-sorting" href="#">
-            <span class="visually-hidden">Показать одну карточку</span>
-          </a>
-          <a class="button-sorting" href="#">
-            <span class="visually-hidden">Показать список</span>
-          </a>
-        </section>
+      </section>
+      <section class="catalog-list">
+        <p class="number-hotels">НАЙДЕНО ГОСТИНИЦ:38</p>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвые</option>
+          <option value="popular">Сначала популярные</option>
+          <option value="expensive">Сначала дорогие</option>
+        </select>
+        <a class="button-sorting current-button" href="#">
+          <span class="visually-hidden">Показать карточки</span>
+        </a>
+        <a class="button-sorting" href="#">
+          <span class="visually-hidden">Показать одну карточку</span>
+        </a>
+        <a class="button-sorting" href="#">
+          <span class="visually-hidden">Показать список</span>
+        </a>
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
