@@ -104,12 +104,14 @@
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-button" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
       </section>
-      <section class="subscription">
-        <img src="#" alt="grand-canyon">
+      <section class="newsletter">
         <h2>ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <input type="text" placeholder="Ваш email" name="Ваш email" id="mail">
-        <a class="subscription-button" href="#">ПОДПИСАТЬСЯ</a>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="newsletter-email">Email</label>
+          <input class="newsletter-field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">ПОДПИСАТЬСЯ</button>
+        </form>
       </section>
     </main>
     <footer class="main-footer">
@@ -132,7 +134,7 @@
             </a>
           </li>
         </ul>
-        <span>+7 (812) 812-12-12</span>
+        <a href="tel:+78128121212">+7 812 812-12-12</a>
         <a href="https://htmlacademy.ru">
           <img src="#" alt="logo-htmlacademy">
         </a>
