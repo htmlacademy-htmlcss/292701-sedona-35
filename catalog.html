@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <link rel="stylesheet" href="styles/style.css">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
@@ -39,6 +40,7 @@
       </nav>
     </header>
     <main class="main-inner">
+      <!-- Каталог -->
       <section class="catalog">
         <h1 class="inner-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -49,7 +51,6 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-        <!-- Каталог -->
         <h2 class="visually-hidden">Каталог</h2>
         <!-- Фильтр каталога -->
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
@@ -99,11 +100,17 @@
                 </li>
               </ul>
           </fieldset>
-          <fieldset class="inner-filter-group">
-            <legend class="inner-filter-title">Стоимость, &#8381;:</legend>
-              <input type="text" placeholder="0" name="min-price">
-              <input type="text" placeholder="9000" name="max-price">
-          </fieldset>
+          <div class="cost-container">
+            <span class="cost-title">Стоимость, &#8381;:</span>
+            <div class="min-price-container">
+              <input class="min-price-field" type="text" placeholder="0" name="min-price">
+              <label for="min-price-field">от</label>
+            </div>
+            <div class="max-price-container">
+              <input class="max-price-field" type="text" placeholder="9000" name="max-price">
+              <label for="max-price-field">до</label>
+            </div>
+          </div>
           <fieldset class="inner-filter-group">
             <button class="button-apply" type="submit">Применить</button>
             <button class="button-drop" type="reset">Сбросить</button>
@@ -323,7 +330,7 @@
         <a class="telephone-link" href="tel:+78128121212">
           <span class="telephone">+7 812 812-12-12</span>
         </a>
-        <a class="" href="https://htmlacademy.ru">
+        <a class="logo-htmlacademy" href="https://htmlacademy.ru">
           <span class="visually-hidden">Логотип HTML Academy</span>
         </a>
       </section>

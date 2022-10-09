@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("ptsans-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("ptsans-700.woff2") format("woff2");
+}
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  /* Наиболее часто встречающиеся параметры текста в макете */
+  font-size: 18px;
+  line-height: 21px;
+}
