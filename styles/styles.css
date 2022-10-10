@@ -1,0 +1,87 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+/* Описание текстовых параметров для всех элементов */
+  /* font-family: "PT Sans", "Arial", sans-serif;
+  font-size: ;
+  line-height: ;
+  font-weight: ;
+  font-style: normal;
+  color: ; */
+  /* др. текстовые параметры, если требуются по макету */
+
+body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  /* Наиболее часто встречающиеся параметры текста в макете */
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #d3d3d3;
+}
+
+/* HEADER */
+.main-header {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.navigation-link {
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navigation-item-button {
+  background-color: #756157;
+}
+
+.navigation-link-title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+/* INTRO */
+.intro-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  font-style: normal;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.intro-description {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+  color: #333333;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/*  */
