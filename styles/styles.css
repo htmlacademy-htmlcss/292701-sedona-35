@@ -1,7 +1,6 @@
 @font-face {
   font-family: "PT Sans";
   font-weight: 400;
-  font-style: normal;
   font-display: swap;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
 }
@@ -9,7 +8,6 @@
 @font-face {
   font-family: "PT Sans";
   font-weight: 700;
-  font-style: normal;
   font-display: swap;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
@@ -19,7 +17,6 @@
   font-size: ;
   line-height: ;
   font-weight: ;
-  font-style: normal;
   color: ; */
   /* др. текстовые параметры, если требуются по макету */
 
@@ -60,15 +57,12 @@ body {
   text-transform: uppercase;
 }
 
-/* INTRO */
+/* INTRO. ВВЕДЕНИЕ*/
 .intro-title {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  font-style: normal;
-  color: #000000;
-  background-color: #ffffff;
   text-align: center;
   text-transform: uppercase;
 }
@@ -78,10 +72,20 @@ body {
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
-  font-style: normal;
   color: #333333;
-  background-color: #ffffff;
   text-align: center;
 }
 
-/*  */
+/* ADVANTAGES */
+.advantages-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text-white {
+  color: #000000
+}
