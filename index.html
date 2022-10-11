@@ -121,17 +121,20 @@
       </section>
       <!-- Поиск гостиницы -->
       <section class="search">
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <h2 class="search-title">Заинтересовались?</h2>
+        <p class="search-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-button" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <!-- Подписка -->
       <section class="newsletter newsletter-index">
-        <h2>Подпишитесь на рассылку</h2>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <div class="newsletter-container text-white">
+          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+          <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        </div>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="newsletter-field"  placeholder="Ваш email" type="email" name="newsletter-email" id="newsletter-email" required>
-          <button class="button newsletter-button" type="submit">Подписаться</button>
+          <label class="newsletter-label" for="newsletter-field">Ваш e-mail</label>
+          <input class="newsletter-field" type="email" name="newsletter-email" required>
+          <button class="newsletter-button text-white" type="submit">Подписаться</button>
         </form>
       </section>
     </main>

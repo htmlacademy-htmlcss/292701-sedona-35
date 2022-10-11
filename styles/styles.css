@@ -29,6 +29,10 @@ body {
   background-color: #d3d3d3;
 }
 
+.text-white {
+  color: #ffffff;
+}
+
 /* HEADER */
 .main-header {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -86,6 +90,81 @@ body {
   text-transform: uppercase;
 }
 
-.text-white {
-  color: #000000
+.advantages-description {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* SEARCH */
+.search-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.search-description {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.search-button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* NEWSLETTER */
+.newsletter-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.newsletter-description {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.newsletter-label {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  opacity: 0,6;
+}
+
+.newsletter-button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+.telephone {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
 }
