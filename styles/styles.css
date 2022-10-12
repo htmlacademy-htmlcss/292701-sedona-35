@@ -32,7 +32,7 @@ body {
 .text-white {
   color: #ffffff;
 }
-
+/* INDEX.HTML */
 /* HEADER */
 .main-header {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -165,6 +165,51 @@ body {
   font-size: 40px;
   line-height: 40px;
   font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* CATALOG.HTML */
+/* BREADCRUMBS */
+.inner-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+  background-color: #d3d3d3;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* CATALOG-FILTER */
+.catalog-filter {
+  color: #ffffff;
+}
+
+.inner-filter-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.control span {
+  line-height: 23px;
+}
+
+.button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
 }

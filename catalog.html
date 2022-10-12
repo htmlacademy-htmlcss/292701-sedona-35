@@ -16,7 +16,7 @@
             <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a href="#">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link navigation-link-current">Гостиницы</a>
@@ -24,17 +24,17 @@
         </ul>
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-button" href="#">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-button" href="#">
+            <a class="navigation-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
-          <li class="navigation-item">
-            <a class="navigation-button-catalog">Хочу сюда!</a>
+          <li class="navigation-item navigation-item-button">
+            <a class="navigation-link navigation-link-title" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -42,8 +42,8 @@
     <main class="main-inner">
       <!-- Каталог -->
       <section class="catalog">
-        <h1 class="inner-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
+        <h1 class="inner-title text-white">Гостиницы Седоны</h1>
+        <ul class="breadcrumbs text-white">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
@@ -103,7 +103,7 @@
           <div class="cost-container">
             <span class="cost-title">Стоимость, &#8381;:</span>
             <div class="min-price-container">
-              <input class="min-price-field" type="text" placeholder="0" name="min-price">
+              <input class="min-price-field" type="text" name="min-price" value="0">
               <label for="min-price-field">от</label>
             </div>
             <div class="max-price-container">
@@ -115,8 +115,8 @@
           <!-- Сделать ползунок цены !! -->
 
           <fieldset class="inner-filter-group">
-            <button class="button-apply" type="submit">Применить</button>
-            <button class="button-drop" type="reset">Сбросить</button>
+            <button class="button button-submit text-white" type="submit">Применить</button>
+            <button class="button button-reset text-white" type="reset">Сбросить</button>
           </fieldset>
         </form>
         <!-- Сортировка каталога -->
