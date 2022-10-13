@@ -1,5 +1,6 @@
 @font-face {
   font-family: "PT Sans";
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -7,26 +8,19 @@
 
 @font-face {
   font-family: "PT Sans";
+  font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
-/* Описание текстовых параметров для всех элементов */
-  /* font-family: "PT Sans", "Arial", sans-serif;
-  font-size: ;
-  line-height: ;
-  font-weight: ;
-  color: ; */
-  /* др. текстовые параметры, если требуются по макету */
-
 body {
   font-family: "PT Sans", "Arial", sans-serif;
-  /* Наиболее часто встречающиеся параметры текста в макете */
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
   color: #000000;
-  background-color: #d3d3d3;
+  background-color: #f2f2f2;
 }
 
 .text-white {
@@ -35,7 +29,6 @@ body {
 /* INDEX.HTML */
 /* HEADER */
 .main-header {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -63,7 +56,6 @@ body {
 
 /* INTRO. ВВЕДЕНИЕ*/
 .intro-title {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -72,17 +64,14 @@ body {
 }
 
 .intro-description {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  font-weight: 400;
   color: #333333;
   text-align: center;
 }
 
 /* ADVANTAGES */
 .advantages-title {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -91,14 +80,11 @@ body {
 }
 
 .advantages-description {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-weight: 400;
   text-align: center;
 }
 
 /* SEARCH */
 .search-title {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -107,15 +93,12 @@ body {
 }
 
 .search-description {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  font-weight: 400;
   text-align: center;
 }
 
 .search-button {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -126,7 +109,6 @@ body {
 
 /* NEWSLETTER */
 .newsletter-title {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -135,23 +117,17 @@ body {
 }
 
 .newsletter-description {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  font-weight: 400;
   text-align: center;
 }
 
 .newsletter-label {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
   opacity: 0,6;
 }
 
 .newsletter-button {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -160,11 +136,14 @@ body {
 }
 
 /* FOOTER */
+.telephone-link {
+  color: #000000;
+  text-decoration: none;
+}
+
 .telephone {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 40px;
   line-height: 40px;
-  font-weight: 400;
   text-align: center;
   text-transform: uppercase;
 }
@@ -172,7 +151,6 @@ body {
 /* CATALOG.HTML */
 /* BREADCRUMBS */
 .inner-title {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
@@ -195,7 +173,6 @@ body {
 }
 
 .inner-filter-title {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -206,10 +183,72 @@ body {
 }
 
 .button {
-  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  color: #ffffff;
   text-align: center;
   text-transform: uppercase;
+}
+
+/* CATALOG-SORTING */
+
+.catalog-sorting {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+/* HOTEL LIST */
+.hotel-card-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotel-card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+}
+
+.hotel-card-table {
+  color: #333333;
+}
+
+.hotel-card-price {
+  text-align: right;
+}
+
+.button-details {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button-favorites {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.raiting-field {
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+/* PAGINATION */
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.pagination-current {
+  color: #000000;
 }
