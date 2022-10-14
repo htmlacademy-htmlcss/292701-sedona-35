@@ -15,6 +15,8 @@
 }
 
 body {
+  width: 1280px;
+  height: 3307.86px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -70,7 +72,39 @@ body {
   text-align: center;
 }
 
+.intro-welcome {
+  width: 1200px;
+  height: 485px;
+  background-image: url("../images/intro-background.jpg");
+  background-size: 1200px 485px;
+  background-color: #9e9e9e;
+}
+
+.intro-white-rectangle {
+  background-color: #ffffff;
+  background-size: 1200px 282px;
+}
+
 /* ADVANTAGES */
+.advantages-item {
+  /* width: 400px;
+  height: 384px; */
+  background-color: rgba(131, 179, 211, 0.12);
+
+}
+
+.advantages-item-blue {
+  background-color: #82B3D3;
+}
+
+.advantages-item-light-blue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-item-white {
+  background-color: #ffffff;
+}
+
 .advantages-title {
   font-size: 24px;
   line-height: 28px;
@@ -84,6 +118,12 @@ body {
 }
 
 /* SEARCH */
+.search {
+  width: 1200px;
+  height: 406px;
+  background-color: #ffffff;
+}
+
 .search-title {
   font-size: 30px;
   line-height: 36px;
@@ -108,6 +148,15 @@ body {
 }
 
 /* NEWSLETTER */
+.newsletter {
+  width: 1200px;
+  height: 414.86px;
+  background-image: url("../images/subscribe-img.jpg");
+  background-size: 1200px 414.86px;
+  background-color: #9e9e9e;
+
+}
+
 .newsletter-title {
   font-size: 30px;
   line-height: 36px;
