@@ -57,6 +57,11 @@ body {
 }
 
 /* INTRO. ВВЕДЕНИЕ*/
+.intro {
+  width: 1200px;
+  height: 767px;
+}
+
 .intro-title {
   font-size: 30px;
   line-height: 36px;
@@ -76,24 +81,33 @@ body {
   width: 1200px;
   height: 485px;
   background-image: url("../images/intro-background.jpg");
-  background-size: 1200px 485px;
+  background-size: 100% auto;
   background-color: #9e9e9e;
 }
 
 .intro-white-rectangle {
+  width: 1200px;
+  height: 282px;
   background-color: #ffffff;
-  background-size: 1200px 282px;
 }
 
 /* ADVANTAGES */
-.advantages-item {
-  /* width: 400px;
-  height: 384px; */
-  background-color: rgba(131, 179, 211, 0.12);
+.advantages-list {
+  list-style-type: none;
+  padding-inline-start: 0;
+  /* margin-block-start: 0;
+  margin-block-end: 0; */
+}
 
+.advantages-item {
+  width: 1200px;
+  height: 384px;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item-blue {
+  width: 400px;
+  height: 384px;
   background-color: #82B3D3;
 }
 
@@ -151,10 +165,13 @@ body {
 .newsletter {
   width: 1200px;
   height: 414.86px;
-  background-image: url("../images/subscribe-img.jpg");
-  background-size: 1200px 414.86px;
-  background-color: #9e9e9e;
+  background-color: #ffffff;
+}
 
+.newsletter-index {
+  background-image: url("../images/subscribe-img.jpg");
+  background-size: 100% auto;
+  background-color: #9e9e9e;
 }
 
 .newsletter-title {
@@ -185,6 +202,12 @@ body {
 }
 
 /* FOOTER */
+.main-footer {
+  width: 1200px;
+  height: 120px;
+  background-color: #ffffff;
+}
+
 .telephone-link {
   color: #000000;
   text-decoration: none;
