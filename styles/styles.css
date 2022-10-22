@@ -35,6 +35,7 @@ body {
 }
 /* INDEX.HTML */
 /* HEADER */
+
 .main-header {
   font-size: 20px;
   line-height: 24px;
@@ -89,6 +90,7 @@ body {
 }
 
 /* ADVANTAGES */
+
 .advantages-list {
   list-style-type: none;
   padding-inline-start: 0;
@@ -130,6 +132,7 @@ body {
 }
 
 /* SEARCH */
+
 .search {
   height: 406px;
   background-color: #ffffff;
@@ -161,6 +164,7 @@ body {
 }
 
 /* NEWSLETTER */
+
 .newsletter {
   background-color: #ffffff;
 }
@@ -201,6 +205,7 @@ body {
 }
 
 /* FOOTER */
+
 .main-footer {
   min-height: 120px;
   background-color: #ffffff;
@@ -220,6 +225,7 @@ body {
 
 /* --CATALOG.HTML ------------------------------------------------------------------------------------------------ */
 /* BREADCRUMBS */
+
 .breadcrumbs-filter-container {
   background-image: url("../images/intro-background-blur.jpg");
   background-size: 100% auto;
@@ -232,7 +238,6 @@ body {
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
-  background-color: #d3d3d3;
 }
 
 .breadcrumbs {
@@ -246,6 +251,7 @@ body {
 }
 
 /* CATALOG-FILTER */
+
 .catalog-filter {
   color: #ffffff;
 }
@@ -280,6 +286,7 @@ body {
 }
 
 /* HOTEL LIST */
+
 .hotel-list {
   list-style-type: none;
   padding-inline-start: 0;
@@ -322,6 +329,7 @@ body {
 }
 
 /* PAGINATION */
+
 .pagination {
   list-style-type: none;  
   padding-inline-start: 0;
