@@ -21,32 +21,69 @@ html {
 body {
   margin: 0;
   width: 1280px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   color: #000000;
   background-color: #f2f2f2;
-  margin: 0;
 }
 
 .text-white {
   color: #ffffff;
 }
 
-.main-container {
+.page-container {
   width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   background-color: #ffffff;
 }
+
 /* INDEX.HTML */
 /* HEADER */
 
 .main-header {
+  height: 64px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
+}
+
+.logo-sedona-link {
+  display: block;
+  margin-left: 70px;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navigation-site {
+  width: 339px;
+  margin-left: 30px;
+}
+
+.navigation-user-menu {
+  width: 268px;
+  margin-left: 285px;
+  margin-right: 70px;
 }
 
 .navigation-link {
@@ -67,6 +104,10 @@ body {
   text-transform: uppercase;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 /* INTRO. ВВЕДЕНИЕ*/
 
 .intro-title {
@@ -85,20 +126,33 @@ body {
 }
 
 .intro-welcome {
+  outline: auto;
+  height: 485px;
   background-image: url("../images/intro-background.jpg");
   background-size: 100% auto;
   background-color: #82B3D3;
 }
 
+.welcome-img {
+  outline: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 .intro-white-rectangle {
-  background-color: #ffffff;
+  min-height: 282px;
 }
 
 /* ADVANTAGES */
 
 .advantages-list {
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
-  padding-inline-start: 0;
+  margin: 0;
+  padding: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .advantages-container {
@@ -106,8 +160,16 @@ body {
 }
 
 .advantages-item {
+  /* width: calc(100%/3); */
   min-height: 384px;
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(1),
+.advantages-item:nth-child(2),
+.advantages-item:nth-child(3),
+.advantages-item:nth-child(4) {
+  display: flex;
 }
 
 .advantages-item-blue {
@@ -134,6 +196,24 @@ body {
 
 .advantages-description {
   text-align: center;
+}
+
+.sedona-city {
+  width: 800px;
+  height: 384px;
+}
+
+.grand-canyon {
+  height: 384px;
+}
+
+.container-img {
+  outline: auto;
+}
+
+.dwelling-img {
+  outline: auto;
+  margin: 0 auto;
 }
 
 /* SEARCH */
@@ -336,7 +416,7 @@ body {
 /* PAGINATION */
 
 .pagination {
-  list-style-type: none;  
+  list-style-type: none;
   padding-inline-start: 0;
 }
 
@@ -347,7 +427,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: #82b3d3;
-  
+
 }
 
 .pagination-link {
@@ -362,4 +442,3 @@ body {
 .pagination-current {
   background-color: #f2f2f2;
 }
-
