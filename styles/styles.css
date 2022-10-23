@@ -49,12 +49,12 @@ body {
 /* HEADER */
 
 .main-header {
+  outline: auto;
   height: 64px;
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .logo-sedona-link {
@@ -104,7 +104,8 @@ body {
   text-transform: uppercase;
 }
 
-.main-container {
+.main-container,
+.main-inner {
   flex-grow: 1;
 }
 
@@ -373,7 +374,8 @@ body {
 /* FOOTER */
 
 .main-footer {
-  min-height: 120px;
+  height: 120px;
+  background: red;
 }
 
 .footer-social {
@@ -413,6 +415,10 @@ body {
 
 /* --CATALOG.HTML ------------------------------------------------------------------------------------------------ */
 /* BREADCRUMBS */
+
+.catalog {
+
+  outline: auto;}
 
 .breadcrumbs-filter-container {
   background-image: url("../images/intro-background-blur.jpg");
