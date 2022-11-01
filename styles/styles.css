@@ -312,6 +312,11 @@ body {
   color: #ffffff;
 }
 
+.newsletter-catalog {
+  height: 414.86px;
+  background-size: 100% auto;
+}
+
 .newsletter-title {
   font-size: 30px;
   line-height: 36px;
@@ -375,7 +380,6 @@ body {
 
 .main-footer {
   height: 120px;
-  background-color:red;
 }
 
 .footer-social {
@@ -436,9 +440,6 @@ body {
   background-size: 100% auto;
   background-color: #82B3D3;
   color: #ffffff;
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
   height: 412px;
 }
 
@@ -446,17 +447,23 @@ body {
   width: 1060px;
   height: 307px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
 }
 
 .inner-title {
+  display: block;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .breadcrumbs-container {
-  outline: auto;
-  margin: 0 auto;
+  /* outline: auto; */
+  margin: 35px auto 0;
   width: 1060px;
   height: 107px;
   display: flex;
@@ -465,6 +472,9 @@ body {
 }
 
 .breadcrumbs {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
   list-style-type: none;
   display: flex;
 }
@@ -479,12 +489,33 @@ body {
 
 .catalog-filter {
   /* color: #ffffff; */
-  outline: red;
+  /* outline: auto; */
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   width: 1060px;
   height: 160px;
+}
+
+.catalog-filter-left {
+  width: 370.85px;
+  height: 157px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-right {
+  width: 549px;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inner-filter-list {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
 }
 
 .inner-filter-title {
@@ -514,6 +545,20 @@ body {
   font-weight: 700;
   color: #333333;
   text-transform: uppercase;
+  display: flex;
+}
+
+.number-hotels-paragraph {
+  outline: auto;
+  display: block;
+  width: 338px;
+  height: 36px;
+}
+
+.select-control {
+  display: block;
+  width: 292px;
+  height: 49px;
 }
 
 /* HOTEL LIST */
@@ -564,16 +609,22 @@ body {
 .pagination {
   list-style-type: none;
   padding-inline-start: 0;
+  width: 400px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .pagination-item {
+  display: block;
+  width: 60px;
+  border-radius: 4px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   background-color: #82b3d3;
-
 }
 
 .pagination-link {
