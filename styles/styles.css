@@ -14,6 +14,12 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
 }
@@ -563,42 +569,101 @@ body {
 
 /* HOTEL LIST */
 
+.hotel-card {
+  width: 340px;
+  height: 438px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  column-gap: 20px;
+  row-gap: 16px;
+}
+
 .hotel-list {
   list-style-type: none;
   padding-inline-start: 0;
 }
 
 .hotel-card-link {
+  display: grid;
+  margin-bottom: 16px;
   color: #000000;
   text-decoration: none;
 }
 
 .hotel-card-title {
+  width: 300px;
+  height: 28px;
+  margin: 0 auto;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-.hotel-card-table {
-  color: #333333;
+.card-image-container {
+  width: 300px;
+  height: 212px;
+  order: -1;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 16px;
+}
+
+.hotel-card-image {
+  /* max-width: 100%; */
+  /* height: auto; */
+}
+
+.hotel-card-dwelling {
+  display: block;
+  width: 140px;
+  height: 21px;
 }
 
 .hotel-card-price {
+  display: block;
+  width: 140px;
+  height: 21px;
   text-align: right;
 }
 
 .button-details {
-  color: #ffffff;
+  display: block;
+  width: 140px;
+  height: 36px;
+  line-height: 36px;
+  background: #756157;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .button-favorites {
-  color: #ffffff;
+  display: block;
+  width: 140px;
+  height: 36px;
+  line-height: 36px;
+  background: #82B3D3;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .raiting-field {
-  line-height: 20px;
+  display: block;
+  width: 140px;
+  height: 37px;
+  background: #F2F2F2;
+  border-radius: 4px;
+  line-height: 37px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
